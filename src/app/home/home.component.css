@@ -1,0 +1,138 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+    width: 100%;
+}
+
+.book-list {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.book-list h2 {
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+}
+
+.book-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.book-list th {
+    background-color: #f8f8f8;
+    color: #333;
+    padding: 10px;
+    text-align: left;
+}
+
+.book-list td {
+    border: 1px solid #f0f0f0;
+    padding: 10px;
+    vertical-align: top;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+
+.book-list button {
+    background-color: #008CBA; /* Blue */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.book-list .edit-button {
+    background-color: #4CAF50; /* Green */
+}
+
+.book-list .delete-button {
+    background-color: #f44336; /* Red */
+}
+
+.book-list .add-button {
+    background-color: #008CBA; /* Blue */
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+    .book-list {
+        width: 90%;
+        padding: 10px;
+        height: inherit;
+    }
+
+    .book-list th,
+    .book-list td {
+        padding: 5px;
+    }
+
+    .book-list button {
+        padding: 5px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    .book-list {
+        width: 95%;
+        padding: 45px;
+        height: inherit;
+    }
+
+    .book-list th,
+    .book-list td {
+        padding: 10px;
+    }
+
+    .book-list button {
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 901px) {
+    .book-list {
+        width: 80%;
+        padding: 20px;
+        height: inherit;
+    }
+
+    .book-list th,
+    .book-list td {
+        padding: 15px;
+    }
+
+    .book-list button {
+        padding: 15px;
+        font-size: 18px;
+    }
+}

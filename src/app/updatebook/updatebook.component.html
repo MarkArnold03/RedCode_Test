@@ -1,0 +1,19 @@
+<div style="padding:5px; border-radius:5px">
+  <h3>Redigera bok</h3>
+  <form *ngIf="selectedBook">
+    <div class="form-group">
+      <label for="title">Titel:</label>
+      <input  type="text" class="form-control" id="title" [(ngModel)]="selectedBook.title" name="title">
+    </div>
+    <div class="form-group">
+      <label for="author">Författare:</label>
+      <input type="text" class="form-control" id="Writer" [(ngModel)]="selectedBook.Writer" name="Writer">
+    </div>
+    <div class="form-group">
+      <label for="publicityDate">Släpptes</label>
+      <input  type="date" class="form-control" id="PublishDate" [(ngModel)]="selectedBook.PublishDate" name="PublishDate">
+    </div>
+    <button class="btn btn-primary" (click)="submit()">Redigera <i class="fa-solid fa-pen-to-square"></i></button>
+    <button class="btn btn-secondary" (click)="hideUpdateForm()">Avbryt <i class="fa-solid fa-ban"></i></button>
+  </form>
+</div>

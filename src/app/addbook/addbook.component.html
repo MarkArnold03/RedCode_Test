@@ -1,0 +1,22 @@
+<div style="margin-left: 5%; margin-right: 5%">
+    <!-- Add Book Form -->
+    <div style="padding: 5px; border-radius: 5px;">
+      <h3>Lägg till bok</h3>
+      <form >
+        <div class="form-group">
+          <label for="title">Titel</label>
+          <input type="text" class="form-control" id="title" [(ngModel)]="newBook.title" name="title" required>
+        </div>
+        <div class="form-group">
+          <label for="author">Författare</label>
+          <input type="text" class="form-control" id="author" [(ngModel)]="newBook.writer" name="author" required>
+        </div>
+        <div class="form-group">
+          <label for="date">Släpptes</label>
+          <input type="date" class="form-control" id="publicityDate" [(ngModel)]="newBook.publishDate" name="publicityDate" required>
+        </div>
+        <button class="btn btn-success" (click)="addBook()">Lägg till <i class="fa-regular fa-square-plus"></i></button>
+        <button class="btn btn-secondary" (click)="hideAddForm()">Avbryt <i class="fa-solid fa-ban"></i></button>
+      </form>
+    </div>
+</div>
