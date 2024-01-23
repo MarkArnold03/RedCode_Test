@@ -1,1 +1,32 @@
-<p>citat works!</p>
+<body>
+    <div class="book-list">
+      <h2>Citater</h2>
+      <table role="table">
+        <thead>
+          <tr>
+            <th scope="col">Namn</th>
+            <th scope="col">Författare</th>
+            <th scope="col">Citatet</th>
+            <th scope="col" *ngIf="isAuthenticated">Radera</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let citat of citats">
+            <td>{{citat.name}}</td>
+            <td>{{citat.writer}}</td>
+            <td>{{citat.text}}</td>
+            <td *ngIf="isAuthenticated">
+              <button class="delete-button" (click)="deleteBook(citat.id)">
+                <i class="fas fa-trash-alt" aria-hidden="true"></i>
+                <span class="sr-only">Radera</span>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <button class="add-button" *ngIf="isAuthenticated" (click)="add()">Lägg till ny citat</button>
+    </div>
+  
+  </body>
+  
+  

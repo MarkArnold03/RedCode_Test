@@ -44,27 +44,6 @@ export class HomeComponent implements OnInit {
       console.error('Failed to get books:', error);
     }
   }
-  // async submit() {
-  //   if (this.book.title && this.book.author) {
-  //     if (this.book.id) {
-  //       // If the book already exists, update it
-  //       await this.bookService.updateBook(this.book).toPromise();
-  //     } else {
-  //       // If the book doesn't exist, add it
-  //       await this.bookService.addBook(this.book).toPromise();
-  //     }
-  //     // Reset the form and refresh the book list
-  //     this.book = {
-  //       id: 0,
-  //       title: '',
-  //       author: '',
-  //       date: ''
-  //     };
-  //     await this.getBooks();
-  //   } else {
-  //     throw new Error('Title and author are required.');
-  //   }
-  // }
 
   add(): void {
     if (!this.isAuthenticated) {
