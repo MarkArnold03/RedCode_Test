@@ -7,7 +7,7 @@ import { Citat } from './citat';
 @Injectable({ providedIn: 'root' })
 export class CitatService {
 
-  private citatsUrl = 'https://localhost:7136/citat';  
+  private citatsUrl = 'https://redcodetestapi.azurewebsites.net/citat';  
   isAuthenticated = false;
 
   httpOptions = {
