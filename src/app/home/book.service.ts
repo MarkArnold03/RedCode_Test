@@ -7,7 +7,7 @@ import { Book } from './book';
 @Injectable({ providedIn: 'root' })
 export class BookService {
 
-  private booksUrl = 'https://redcodetestapi.azurewebsites.net/ Book';  
+  private booksUrl = 'https://redcodetestapi.azurewebsites.net/Book';  
   isAuthenticated = false;
 
   httpOptions = {

@@ -10,7 +10,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./updatebook.component.css']
 })
 export class UpdatebookComponent {
-  private booksUrl = 'https://localhost:7136/Book'; 
+  private booksUrl = 'https://redcodetestapi.azurewebsites.net/Book'; 
   book!: Book;
   isAuthenticated = false;
   id? : any;

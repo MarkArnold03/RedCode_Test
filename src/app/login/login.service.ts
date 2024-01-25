@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 
 export class loginService{
-    private apiUrl = 'https://localhost:7136/api';
+    private apiUrl = 'https://redcodetestapi.azurewebsites.net/api';
 
     constructor(private http: HttpClient) { }
 

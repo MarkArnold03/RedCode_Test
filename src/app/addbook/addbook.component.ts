@@ -11,7 +11,7 @@ import { BookService } from '../home/book.service';
   styleUrls: ['./addbook.component.css']
 })
 export class AddbookComponent {
-  private booksUrl = 'https://localhost:7136/Book';  
+  private booksUrl = 'https://redcodetestapi.azurewebsites.net/Book';  
   isAuthenticated = false;
   newBook: Book = {
     title: '', writer: '', publishDate: '',
